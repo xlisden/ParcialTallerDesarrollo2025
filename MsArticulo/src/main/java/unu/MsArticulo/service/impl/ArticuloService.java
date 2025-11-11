@@ -2,6 +2,7 @@ package unu.MsArticulo.service.impl;
 
 import unu.MsArticulo.controller.request.ArticuloRequest;
 import unu.MsArticulo.model.Articulo;
+import unu.MsArticulo.model.dto.ArticuloDto;
 import unu.MsArticulo.repository.IArticuloRepository;
 import unu.MsArticulo.service.IArticuloService;
 import jakarta.transaction.Transactional;
@@ -18,10 +19,11 @@ public class ArticuloService implements IArticuloService {
 
     @Override
     @Transactional
-    public Articulo add(ArticuloRequest request) {
-        Articulo entidad = new Articulo();
-        entidad.setNombre(request.getNombre());
-        entidad.setPrecio(request.getPrecio());
-        return repository.save(entidad);
+    public ArticuloDto add(ArticuloRequest request) {
+        Articulo articulo = new Articulo();
+        articulo.setNombre(request.getNombre());
+        articulo.setPrecio(request.getPrecio());
+        articulo = repository.save(articulo);
+        return articulo.getDto();
     }
 }

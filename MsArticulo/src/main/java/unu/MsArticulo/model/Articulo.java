@@ -10,6 +10,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import unu.MsArticulo.model.dto.ArticuloDto;
 
 import java.io.Serializable;
 
@@ -32,5 +33,13 @@ public class Articulo implements Serializable {
     private String nombre;
 
     private double precio;
+
+    public ArticuloDto getDto() {
+        ArticuloDto dto = new ArticuloDto();
+        dto.setIdArticulo(this.getIdArticulo());
+        dto.setNombre(this.getNombre());
+        dto.setPrecio(this.getPrecio());
+        return dto;
+    }
 
 }

@@ -1,7 +1,7 @@
 package unu.MsArticulo.controller;
 
 import unu.MsArticulo.controller.request.ArticuloRequest;
-import unu.MsArticulo.model.Articulo;
+import unu.MsArticulo.model.dto.ArticuloDto;
 import unu.MsArticulo.service.IArticuloService;
 import unu.MsArticulo.utils.ApiRoutes;
 import lombok.AllArgsConstructor;
@@ -19,11 +19,11 @@ public class ArticuloController {
     private IArticuloService service;
 
     @PostMapping(ApiRoutes.ArticuloRoutes.add)
-    public ResponseEntity<Articulo> add(@RequestBody ArticuloRequest request) throws RuntimeException {
-        Articulo entidad = new Articulo();
+    public ResponseEntity<ArticuloDto> add(@RequestBody ArticuloRequest request) throws RuntimeException {
+        ArticuloDto dto = new ArticuloDto();
         log.info("ArticuloController-add {}", request.toString());
-        entidad = service.add(request);
-        return ResponseEntity.status(HttpStatus.CREATED).body(entidad);
+        dto = service.add(request);
+        return ResponseEntity.status(HttpStatus.CREATED).body(dto);
     }
 
 }
