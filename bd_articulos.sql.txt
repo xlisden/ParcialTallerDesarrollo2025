@@ -1,0 +1,12 @@
+SET search_path TO bd_articulo;
+
+CREATE TABLE public.articulo (
+	idArticulo INT GENERATED ALWAYS AS IDENTITY NOT NULL,
+	nombre VARCHAR(100) NOT NULL,
+	precio DECIMAL(10,2) NOT NULL,
+	CONSTRAINT paseo_pk PRIMARY KEY (idArticulo)
+);
+
+INSERT INTO public.articulo
+(nombre, precio)
+VALUES('holasoy un articuklio', 110);
