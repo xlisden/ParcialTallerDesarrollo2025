@@ -1,12 +1,13 @@
 package unu.MsSeguridad.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
-import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
+import unu.MsSeguridad.model.Seguridad;
+
+import java.util.List;
 
 @Repository
-public interface ISeguridadRepository extends MongoRepository<unu.MsSeguridad.model.Seguridad, String> {
+public interface ISeguridadRepository extends MongoRepository<Seguridad, String> {
 
-    @Query("{ 'nombre': ?0, 'clave': ?1 }")
-    boolean login(String nombre, String clave);
+    List<Seguridad> findByNombreAndClave(String nombre, String clave);
 }

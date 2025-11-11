@@ -14,12 +14,10 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @Document(collection = "seguridad")
-public class Seguridad implements Serializable {
-
-    private static final long serialVersionUID = 1L;
+public class Seguridad {
 
     @Id
-    private int idUsuario;
+    private String idUsuario;
 
     private String nombre;
 

@@ -1,0 +1,23 @@
+[ 
+{
+  "_id": {
+    "$oid": "6913c46ed326a5a45679a4d0"
+  },
+  "nombre": "nombre-11",
+  "clave": "clave-11"  
+},
+{
+  "_id": {
+    "$oid": "6913c46ed326a5a45679a4d1"
+  },
+  "nombre": "nombre-22",
+  "clave": "clave-22"  
+},
+  {
+  "_id": {
+    "$oid": "6913c46ed326a5a45679a4d2"
+  },
+  "nombre": "nombre-33",
+  "clave": "clave-33"  
+}
+]
