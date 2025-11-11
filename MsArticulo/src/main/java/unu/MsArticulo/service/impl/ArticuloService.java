@@ -9,6 +9,7 @@ import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
+import unu.MsArticulo.utils.Mensajes;
 import unu.MsArticulo.utils.exceptions.CustomException;
 
 @Log4j2
@@ -24,7 +25,7 @@ public class ArticuloService implements IArticuloService {
         Articulo articulo = new Articulo();
         articulo.setNombre(request.getNombre());
         if (request.getPrecio() < 0) {
-            throw new CustomException("El precio no debe ser menor a 0");
+            throw new CustomException(Mensajes.precioNegativo);
         }
         articulo.setPrecio(request.getPrecio());
         articulo = repository.save(articulo);
