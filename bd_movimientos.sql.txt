@@ -1,0 +1,21 @@
+
+CREATE DATABASE bd_movimiento;
+
+USE bd_movimiento;
+
+CREATE TABLE movimiento (
+	idMovimiento INT PRIMARY KEY AUTO_INCREMENT,
+	idArticulo INT NOT NULL,
+	tipoMovimiento VARCHAR(100) NOT NULL,
+	cantidad INT NOT NULL,
+	estado VARCHAR(100) NOT NULL
+);
+
+INSERT INTO bd_movimiento.movimiento
+(idMovimiento, idArticulo, tipoMovimiento, cantidad, estado)
+VALUES
+(0, 2, 'mov1', 20, 'actuvo'),
+(0, 3, 'mov1', 30, 'reservado'),
+(0, 4, 'mov3', 50, 'actrivo'),
+(0, 5, 'mov2', 10, 'reservao'),
+(0, 7, 'mov1', 19, 'actvio');

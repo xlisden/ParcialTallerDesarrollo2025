@@ -1,0 +1,4 @@
+2025-11-11T17:33:19.521-05:00 ERROR 16032 --- [MsArticulo] [http-nio-86-exec-2] u.M.utils.GlobalExceptionHandler         : Exception JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name 
+ org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:408)
+2025-11-11T17:45:14.894-05:00 ERROR 1976 --- [MsArticulo] [http-nio-86-exec-1] u.M.utils.GlobalExceptionHandler         : Exception JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name 
+ org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:408)

@@ -1,0 +1,52 @@
+2025-11-11T17:51:42.339-05:00 ERROR 15820 --- [MsMovimiento] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2025-11-11T17:52:16.795-05:00 ERROR 3928 --- [MsMovimiento] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2025-11-11T17:52:18.652-05:00 ERROR 3928 --- [MsMovimiento] [http-nio-87-exec-1] u.M.utils.GlobalExceptionHandler         : Exception Required request body is missing: public org.springframework.http.ResponseEntity<unu.MsMovimiento.model.Movimiento> unu.MsMovimiento.controller.MovimientoController.edit(int,unu.MsMovimiento.controller.request.MovimientoRequest) throws unu.MsMovimiento.utils.exceptions.NotFoundException 
+ org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:179)
+2025-11-11T17:52:24.146-05:00 ERROR 3928 --- [MsMovimiento] [http-nio-87-exec-2] u.M.utils.GlobalExceptionHandler         : Exception Required request body is missing: public org.springframework.http.ResponseEntity<unu.MsMovimiento.model.Movimiento> unu.MsMovimiento.controller.MovimientoController.edit(int,unu.MsMovimiento.controller.request.MovimientoRequest) throws unu.MsMovimiento.utils.exceptions.NotFoundException 
+ org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:179)
+2025-11-11T17:52:29.841-05:00 ERROR 3928 --- [MsMovimiento] [http-nio-87-exec-4] u.M.utils.GlobalExceptionHandler         : Exception Request method 'POST' is not supported 
+ org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:267)
+2025-11-11T17:52:32.781-05:00 ERROR 3928 --- [MsMovimiento] [http-nio-87-exec-6] u.M.utils.GlobalExceptionHandler         : Exception Request method 'POST' is not supported 
+ org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:267)
+2025-11-11T17:52:36.396-05:00 ERROR 3928 --- [MsMovimiento] [http-nio-87-exec-3] u.M.utils.GlobalExceptionHandler         : Exception Required request body is missing: public org.springframework.http.ResponseEntity<unu.MsMovimiento.model.Movimiento> unu.MsMovimiento.controller.MovimientoController.edit(int,unu.MsMovimiento.controller.request.MovimientoRequest) throws unu.MsMovimiento.utils.exceptions.NotFoundException 
+ org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:179)
+2025-11-11T17:52:43.343-05:00 ERROR 3928 --- [MsMovimiento] [http-nio-87-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2025-11-11T17:52:43.347-05:00 ERROR 3928 --- [MsMovimiento] [http-nio-87-exec-5] u.M.utils.GlobalExceptionHandler         : Exception Could not open JPA EntityManager for transaction 
+ org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:467)
+2025-11-11T17:53:33.724-05:00 ERROR 3928 --- [MsMovimiento] [http-nio-87-exec-8] u.M.utils.GlobalExceptionHandler         : Exception JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries 
+ org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:408)
+2025-11-11T17:53:39.609-05:00 ERROR 3928 --- [MsMovimiento] [http-nio-87-exec-9] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2025-11-11T17:53:39.611-05:00 ERROR 3928 --- [MsMovimiento] [http-nio-87-exec-9] u.M.utils.GlobalExceptionHandler         : Exception Could not open JPA EntityManager for transaction 
+ org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:467)
+2025-11-11T17:53:44.084-05:00 ERROR 3928 --- [MsMovimiento] [http-nio-87-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2025-11-11T17:53:44.087-05:00 ERROR 3928 --- [MsMovimiento] [http-nio-87-exec-10] u.M.utils.GlobalExceptionHandler         : Exception Could not open JPA EntityManager for transaction 
+ org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:467)
+2025-11-11T17:54:19.600-05:00 ERROR 12444 --- [MsMovimiento] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2025-11-11T17:54:34.729-05:00 ERROR 15424 --- [MsMovimiento] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2025-11-11T17:55:24.361-05:00 ERROR 9672 --- [MsMovimiento] [http-nio-87-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'bd_movimiento.Movimiento' doesn't exist
+2025-11-11T17:55:24.384-05:00 ERROR 9672 --- [MsMovimiento] [http-nio-87-exec-1] u.M.utils.GlobalExceptionHandler         : Exception JDBC exception executing SQL [select m1_0.id,m1_0.cantidad,m1_0.estado,m1_0.idArticulo,m1_0.tipoMovimiento from Movimiento m1_0 where m1_0.id=?] [Table 'bd_movimiento.Movimiento' doesn't exist] [n/a]; SQL [n/a] 
+ org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:281)
+2025-11-11T17:55:53.829-05:00 ERROR 16528 --- [MsMovimiento] [http-nio-87-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unknown column 'm1_0.id' in 'field list'
+2025-11-11T17:55:53.843-05:00 ERROR 16528 --- [MsMovimiento] [http-nio-87-exec-1] u.M.utils.GlobalExceptionHandler         : Exception JDBC exception executing SQL [select m1_0.id,m1_0.cantidad,m1_0.estado,m1_0.idArticulo,m1_0.tipoMovimiento from movimiento m1_0 where m1_0.id=?] [Unknown column 'm1_0.id' in 'field list'] [n/a]; SQL [n/a] 
+ org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:281)
+2025-11-11T17:56:29.455-05:00 ERROR 19620 --- [MsMovimiento] [http-nio-87-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unknown column 'm1_0.cantidad' in 'field list'
+2025-11-11T17:56:29.468-05:00 ERROR 19620 --- [MsMovimiento] [http-nio-87-exec-1] u.M.utils.GlobalExceptionHandler         : Exception JDBC exception executing SQL [select m1_0.idMovimiento,m1_0.cantidad,m1_0.estado,m1_0.idArticulo,m1_0.tipoMovimiento from movimiento m1_0 where m1_0.idMovimiento=?] [Unknown column 'm1_0.cantidad' in 'field list'] [n/a]; SQL [n/a] 
+ org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:281)
+2025-11-11T17:56:54.580-05:00 ERROR 19620 --- [MsMovimiento] [http-nio-87-exec-2] u.M.utils.GlobalExceptionHandler         : NotFoundException No se encontro el movimiento con id 234 
+ unu.MsMovimiento.service.impl.MovimientoService.lambda$getById$0(MovimientoService.java:23)
+2025-11-11T18:00:20.647-05:00 ERROR 14980 --- [MsMovimiento] [http-nio-87-exec-1] u.M.utils.GlobalExceptionHandler         : NotFoundException No se encontro el movimiento con id 234 
+ unu.MsMovimiento.service.impl.MovimientoService.lambda$getById$0(MovimientoService.java:21)

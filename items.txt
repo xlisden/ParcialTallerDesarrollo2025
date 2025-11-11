@@ -1,0 +1,4 @@
+1. sin errores de compilacion
+2. log de errores en txt
+3. centralizacion de rutas
+4. exception gloabl handler
