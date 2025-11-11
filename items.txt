@@ -2,3 +2,8 @@
 2. log de errores en txt
 3. centralizacion de rutas
 4. exception gloabl handler
+5. git hub
+	- Docker
+	- cod
+	- bd script
+	- txt endpoints
