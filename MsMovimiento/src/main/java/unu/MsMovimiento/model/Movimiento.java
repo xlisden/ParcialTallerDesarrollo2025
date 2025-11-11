@@ -10,6 +10,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import unu.MsMovimiento.model.dto.MovimientoDto;
 
 import java.io.Serializable;
 
@@ -37,4 +38,14 @@ public class Movimiento implements Serializable {
 
     @Column(length = 100, nullable = false)
     private String estado;
+
+    public MovimientoDto getDto() {
+        MovimientoDto dto = new MovimientoDto();
+        dto.setIdMovimiento(this.getIdMovimiento());
+        dto.setIdArticulo(this.getIdArticulo());
+        dto.setTipoMovimiento(this.getTipoMovimiento());
+        dto.setCantidad(this.getCantidad());
+        dto.setEstado(this.getEstado());
+        return dto;
+    }
 }

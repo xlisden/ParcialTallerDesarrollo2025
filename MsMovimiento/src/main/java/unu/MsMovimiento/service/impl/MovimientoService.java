@@ -2,6 +2,7 @@ package unu.MsMovimiento.service.impl;
 
 import unu.MsMovimiento.controller.request.ActualizarEstadoRequest;
 import unu.MsMovimiento.model.Movimiento;
+import unu.MsMovimiento.model.dto.MovimientoDto;
 import unu.MsMovimiento.repository.IMovimientoRepository;
 import unu.MsMovimiento.service.IMovimientoService;
 import unu.MsMovimiento.utils.exceptions.NotFoundException;
@@ -22,9 +23,10 @@ public class MovimientoService implements IMovimientoService {
     }
 
     @Override
-    public Movimiento actualizarEstado(int id, ActualizarEstadoRequest request) {
+    public MovimientoDto actualizarEstado(int id, ActualizarEstadoRequest request) {
         Movimiento movimiento = getById(id);
         movimiento.setEstado(request.getEstado());
-        return repository.save(movimiento);
+        movimiento = repository.save(movimiento);
+        return movimiento.getDto();
     }
 }

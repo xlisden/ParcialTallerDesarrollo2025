@@ -1,7 +1,7 @@
 package unu.MsMovimiento.controller;
 
 import unu.MsMovimiento.controller.request.ActualizarEstadoRequest;
-import unu.MsMovimiento.model.Movimiento;
+import unu.MsMovimiento.model.dto.MovimientoDto;
 import unu.MsMovimiento.service.IMovimientoService;
 import unu.MsMovimiento.utils.ApiRoutes;
 import unu.MsMovimiento.utils.exceptions.NotFoundException;
@@ -20,8 +20,8 @@ public class MovimientoController {
     private IMovimientoService service;
 
     @PutMapping(ApiRoutes.MovimientoRoutes.actualizarEstado)
-    public ResponseEntity<Movimiento> actualizarEstado(@PathVariable int idMovimiento, @RequestBody ActualizarEstadoRequest request) throws NotFoundException {
-        Movimiento movimiento = new Movimiento();
+    public ResponseEntity<MovimientoDto> actualizarEstado(@PathVariable int idMovimiento, @RequestBody ActualizarEstadoRequest request) throws NotFoundException {
+        MovimientoDto movimiento = new MovimientoDto();
         log.info("MovimientoController-edit {}", request.toString());
         movimiento = service.actualizarEstado(idMovimiento, request);
         return ResponseEntity.status(HttpStatus.CREATED).body(movimiento);
