@@ -6,6 +6,7 @@ import unu.MsMovimiento.model.dto.MovimientoDto;
 import unu.MsMovimiento.repository.IMovimientoRepository;
 import unu.MsMovimiento.service.IMovimientoService;
 import unu.MsMovimiento.utils.Mensajes;
+import unu.MsMovimiento.utils.exceptions.CustomException;
 import unu.MsMovimiento.utils.exceptions.NotFoundException;
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j2;
@@ -26,6 +27,9 @@ public class MovimientoService implements IMovimientoService {
     @Override
     public MovimientoDto actualizarEstado(int id, ActualizarEstadoRequest request) {
         Movimiento movimiento = getById(id);
+        if (request.getEstado().equals("")) {
+            throw new CustomException(Mensajes.estadoVacio);
+        }
         movimiento.setEstado(request.getEstado());
         movimiento = repository.save(movimiento);
         return movimiento.getDto();

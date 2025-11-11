@@ -50,3 +50,5 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
  unu.MsMovimiento.service.impl.MovimientoService.lambda$getById$0(MovimientoService.java:23)
 2025-11-11T18:00:20.647-05:00 ERROR 14980 --- [MsMovimiento] [http-nio-87-exec-1] u.M.utils.GlobalExceptionHandler         : NotFoundException No se encontro el movimiento con id 234 
  unu.MsMovimiento.service.impl.MovimientoService.lambda$getById$0(MovimientoService.java:21)
+2025-11-11T18:51:21.056-05:00 ERROR 20140 --- [MsMovimiento] [http-nio-87-exec-1] u.M.utils.GlobalExceptionHandler         : NotFoundException No se encontro el movimiento con id 2324324 
+ unu.MsMovimiento.service.impl.MovimientoService.lambda$getById$0(MovimientoService.java:23)
