@@ -7,3 +7,4 @@
 	- cod
 	- bd script
 	- txt endpoints
+6. mappers?
