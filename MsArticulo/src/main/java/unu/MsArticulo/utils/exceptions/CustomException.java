@@ -7,8 +7,8 @@ import lombok.Setter;
 @Setter
 public class CustomException extends RuntimeException{
 
-    public CustomException(String mensaje, Throwable causa) {
-        super(mensaje, causa);
+    public CustomException(String mensaje) {
+        super(mensaje);
     }
 
 }
